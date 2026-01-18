@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic CMS Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Dynamic CMS Dashboard</h1>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="container">
+
+    <!-- Admin Panel -->
+    <div class="form-container">
+      <h2>Admin Panel</h2>
+      <input type="text" id="title" placeholder="Enter Title">
+      <textarea id="desc" placeholder="Enter Description"></textarea>
+      <button onclick="addContent()">Save Content</button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <h2>Published Content</h2>
+      <div id="contentList"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
